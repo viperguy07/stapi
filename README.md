@@ -1,0 +1,2 @@
+# stapi
+Gaming clan API
