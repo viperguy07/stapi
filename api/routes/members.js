@@ -55,7 +55,7 @@ router.patch('/:id', (req, res, next) => {
 router.get('/:id', (req, res, next) => {
     const id = req.params.id;
     // Member.$where(_id: id)
-    Member.findById(id)
+    Member.findOne({fid: id})
       .exec()
       .then(doc => {
         console.log(doc);
