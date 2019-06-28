@@ -2,6 +2,7 @@
 Gaming clan member manager API
 
 Add member
+```
     Method: POST
     Url: "http://localhost:5001/members"
     json: {
@@ -11,8 +12,9 @@ Add member
         "status': 0,  // Optional
         "rank": 99  // Optional
     }
-
+```
 Update member
+```
     Method: PATCH
     Note: Must be an arry with objects
     Url: "http://localhost:5001/members/{userFbId}"
@@ -23,11 +25,16 @@ Update member
                 "value": "STe6 iTz Psychedelik" // New value for the key
         }
     ]
+```
 
 Get all members
+```
     Method: GET
     Url: "http://localhost:5001/members"
+```
 
 Get one member
+```
     Method: GET
     Url: "http://localhost:5001/members/{userFbId}"
+```
